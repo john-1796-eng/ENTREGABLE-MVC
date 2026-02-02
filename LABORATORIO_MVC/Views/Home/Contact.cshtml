@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Contacto";
+}
+
+<div class="container mt-5" style="max-width: 700px;">
+
+    <h2 class="mb-4">Contacto y Soporte</h2>
+
+    <p class="lead">
+        Si necesitas ayuda relacionada con el sistema <strong>EmployeeManager</strong>,
+        puedes comunicarte con el área encargada o enviarnos un mensaje desde este formulario.
+    </p>
+
+    <h4 class="mt-4">Información de contacto</h4>
+    <ul class="list-unstyled" style="font-size: 1.1rem;">
+        <li>📧 <strong>Email:</strong> soporte@empresa.com</li>
+        <li>📞 <strong>Teléfono:</strong> +57 300 000 0000</li>
+        <li>🏢 <strong>Dirección:</strong> Calle 123 #45-67, Bogotá</li>
+    </ul>
+
+    <h4 class="mt-4">Enviar un mensaje</h4>
+
+    @if (TempData["ok"] != null)
+    {
+        <div class="alert alert-success">@TempData["ok"]</div>
+    }
+
+    <form action="/Contacto/Enviar" method="post">
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group mt-2">
+            <label>Correo electrónico</label>
+            <input type="email" name="correo" class="form-control" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+
+        <div class="form-group mt-2">
+            <label>Mensaje</label>
+            <textarea name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+        </div>
+
+        <button class="btn btn-primary mt-3">Enviar</button>
+    </form>
+
+</div>
+

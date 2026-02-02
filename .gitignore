@@ -1,0 +1,22 @@
+# Ignorar archivos de Visual Studio
+.vs/
+bin/
+obj/
+packages/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.dbmdl
+*.ldb
+*.log
+
+# Ignorar archivos temporales
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+
+# Ignorar publicaciones
+publish/
