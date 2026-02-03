@@ -132,6 +132,33 @@ namespace LABORATORIO_MVC.EmpleadosWebForm
         protected global::System.Web.UI.WebControls.TextBox txt_puesto;
 
         /// <summary>
+        /// Control btn_crear.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_crear;
+
+        /// <summary>
+        /// Control btn_actualizar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_actualizar;
+
+        /// <summary>
+        /// Control btn_borrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_borrar;
+
+        /// <summary>
         /// Control grid_empleados.
         /// </summary>
         /// <remarks>

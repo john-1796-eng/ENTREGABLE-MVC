@@ -1,9 +1,45 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Acerca de";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <p>Use this area to provide additional information.</p>
-</main>
+<div class="container mt-5">
+
+    <h2 class="mb-3">Acerca del Sistema</h2>
+
+    <p class="lead">
+        Este proyecto es un módulo de gestión de empleados que permite realizar
+        el registro, actualización y consulta de información del personal,
+        integrando WebForms, MVC y SQL Server en una sola solución.
+    </p>
+
+    <hr />
+
+    <h4>Funciones principales</h4>
+    <ul>
+        <li>Registrar nuevos empleados.</li>
+        <li>Actualizar información existente.</li>
+        <li>Borrado lógico de empleados (marcados como inactivos).</li>
+        <li>Consulta de empleados activos en la base de datos.</li>
+    </ul>
+
+    <h4>Tecnologías utilizadas</h4>
+    <ul>
+        <li>ASP.NET MVC 5</li>
+        <li>ASP.NET WebForms</li>
+        <li>SQL Server 2022</li>
+        <li>Bootstrap 5 para diseño responsivo</li>
+        <li>C# como lenguaje principal</li>
+    </ul>
+
+    <hr />
+
+    <h5>Información adicional</h5>
+    <p>
+        Este sistema fue desarrollado con fines académicos y de aprendizaje,
+        implementando buenas prácticas como uso de procedimientos almacenados,
+        separación de capas y arquitectura mixta.
+    </p>
+
+</div>
+
